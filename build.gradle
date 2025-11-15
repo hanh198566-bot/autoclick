@@ -1,6 +1,13 @@
 
-buildscript {
-    repositories { google(); mavenCentral() }
-    dependencies { classpath 'com.android.tools.build:gradle:8.1.0' }
+apply plugin: 'com.android.application'
+android {
+  namespace 'com.dg.dgbao'
+  compileSdk 33
+  defaultConfig {
+    applicationId "com.dg.dgbao"
+    minSdk 24
+    targetSdk 33
+    versionCode 1
+    versionName "1.0"
+  }
 }
-allprojects { repositories { google(); mavenCentral() } }
